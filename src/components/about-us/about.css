@@ -1,0 +1,62 @@
+.Image {
+    max-width: 150px;
+    height: 5rem;
+    padding: 0 15px;
+    object-fit: contain;
+}
+
+.Image:last-of-type {
+    padding-right: 0;
+}
+
+.inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+}
+
+section {
+    display: flex;
+    animation: swipe var(--speed) linear infinite backwards;
+}
+
+@keyframes swipe {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(-100%);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Image {
+        max-width: 100px;
+        height: 4rem;
+        padding: 0 10px;
+    }
+
+    .inner {
+        height: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Image {
+        max-width: 80px;
+        height: 3rem;
+        padding: 0 5px;
+    }
+
+    .inner {
+        height: 3rem;
+    }
+}
