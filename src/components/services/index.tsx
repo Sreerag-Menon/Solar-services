@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import { CctvIcon, HomeAutomation, SolarIcon } from '@/utils/svg';
-import './service.css'
+
 import { inter, lato } from '@/utils/fonts';
 
 const StyledContainer = styled('div')(({ theme }) => ({
