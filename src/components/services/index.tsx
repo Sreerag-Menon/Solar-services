@@ -8,32 +8,37 @@ import { CctvIcon, HomeAutomation, SolarIcon } from '@/utils/svg';
 
 import { inter, lato } from '@/utils/fonts';
 
+
 const StyledContainer = styled('div')(({ theme }) => ({
     position: 'absolute',
-    top: '28px',
+    top: '95px',
     left: 0,
     right: 0,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+
+
     alignItems: 'center',
-    height: '75vh',
+    height: '100%',
     color: 'gray',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
         height: 'auto',
-        top: '20px',
+        position: 'absolute',
+        top: '0'
     },
 }));
 
 const StyledTabsContainer = styled('div')(({ theme }) => ({
     width: '75%',
-    height: '50%',
+    height: '70%',
     backgroundColor: 'white',
     borderRadius: '8px',
     padding: '16px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.3)',
     display: 'flex',
     flexDirection: 'column',
+
+
     alignItems: 'center',
     [theme.breakpoints.down('sm')]: {
         width: '90%',
@@ -75,9 +80,13 @@ export const Services: React.FC = () => {
 
     return (
         <StyledContainer>
-            <h3 className={`text-4xl sm:text-6xl md:text-8xl font-bold text-custom-green mb-4 ${inter.className} ${lato.style} text-center`}>
-                Services
-            </h3>
+            <div className='w-3/4 flex items-start flex-col mb-7 ' >
+
+                <h3 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-custom-green mb-4 ${inter.className} ${lato.style} text-center`}>
+                    SERVICES
+                </h3>
+                <p className={`text-gray-500 text-base ${lato.className} ${inter.style}`}>Embrace Sustainable Living with Our Expert Solar, Security, and Smart Home Solutions.</p>
+            </div>
             <StyledTabsContainer>
                 <Box sx={{ width: '100%', bgcolor: 'white' }}>
                     <Tabs
@@ -103,6 +112,7 @@ export const Services: React.FC = () => {
                     <p className='text-black'>{serviceData[value].description}</p>
                 </div>
             </StyledTabsContainer>
+
         </StyledContainer>
     );
 };

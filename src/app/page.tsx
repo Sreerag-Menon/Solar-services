@@ -4,6 +4,7 @@ import '../app/globals.css'
 import { HomeCardSlider } from "@/components/home-card-slider";
 import { AboutUs } from "@/components/about-us";
 import { Services } from "@/components/services";
+import { ContactUs } from "@/components/testimonial/layout";
 
 export default function Home() {
   return (
@@ -17,10 +18,14 @@ export default function Home() {
         <div id="About-us" className="relative h-screen">
           <AboutUs />
         </div>
-        <div id="services" className="relative h-screen">
+        <div id="services" className="relative h-screen bg-gray-100">
           <Services />
         </div>
       </div>
+      <div id='contact-us' className="relative h-screen">
+        <ContactUs />
+      </div>
+
     </main>
   );
 }
