@@ -21,10 +21,10 @@ const StyledContainer = styled('div')(({ theme }) => ({
     alignItems: 'center',
     height: '100%',
     color: 'gray',
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
         height: 'auto',
         position: 'absolute',
-        top: '0'
+        top: '90px'
     },
 }));
 
