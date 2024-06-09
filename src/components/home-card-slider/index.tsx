@@ -20,7 +20,7 @@ const carouselDetails = [{
 {
     image: thirdImage,
     heading: "UNLOCK THE FUTURE OF SMART LIVING",
-    text: " we offer customized home automation installations tailored to your unique lifestyle and preferences."
+    text: " We offer customized home automation installations tailored to your unique lifestyle and preferences."
 
 },
 {
@@ -45,7 +45,7 @@ export const HomeCardSlider: React.FC = () => {
                             {details.heading}
                         </h2>
                         <p
-                            className={`text-gray-300 text-sm md:text-base py-5 font-thin text-center w-full md:w-1/2 ${inter.style} ${inter.className}`}
+                            className={`text-gray-200 text-sm md:text-base py-5 font-thin text-center w-full md:w-1/2  ${inter.className}`}
                         >
                             {details.text}
                         </p>

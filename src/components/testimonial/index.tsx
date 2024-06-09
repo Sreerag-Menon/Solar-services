@@ -9,7 +9,7 @@ export const TestimonialComponent = () => {
         >
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl md:text-center">
-                    <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+                    <h2 className="font-display text-4xl tracking-tight text-slate-900 sm:text-4xl text-center">
                         What Our Customers Are Saying
                     </h2>
                 </div>

@@ -1,4 +1,5 @@
 import { Link } from "@nextui-org/react"
+import Image from "next/image"
 
 
 export const Footer: React.FC = () => {
@@ -8,8 +9,8 @@ export const Footer: React.FC = () => {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <a href="https://flowbite.com" className="flex items-center">
-                            <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-8" alt="FlowBite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HPMJ SERVICES</span>
+                            <Image src="/logo/kpmj controls logo without text.png" width={40} height={40} className="mr-3" alt="FlowBite Logo" />
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KPMJ CONTROLS</span>
                         </a>
                     </div>
                     <div className="grid  gap-6 grid-cols-3">
