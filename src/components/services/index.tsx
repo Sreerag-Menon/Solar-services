@@ -82,7 +82,7 @@ export const Services: React.FC = () => {
         <StyledContainer>
             <div className='w-3/4 flex items-start flex-col mb-7 ' >
 
-                <h3 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-custom-green mb-4 ${inter.className} ${lato.style} text-center`}>
+                <h3 className={`text-3xl sm:text-4xl md:text-7xl font-bold text-custom-green mb-4 ${inter.className} ${lato.style} text-center`}>
                     SERVICES
                 </h3>
                 <p className={`text-gray-500 text-base ${lato.className} ${inter.style}`}>Embrace Sustainable Living with Our Expert Solar, Security, and Smart Home Solutions.</p>

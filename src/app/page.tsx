@@ -15,10 +15,10 @@ export default function Home() {
         <div className="relative h-screen" id="Home">
           <HomeCardSlider />
         </div>
-        <div id="About-us" className="relative h-screen">
+        <div className="relative h-screen">
           <AboutUs />
         </div>
-        <div id="services" className="relative h-screen bg-gray-100">
+        <div id="services" className="relative h-screen  ">
           <Services />
         </div>
       </div>

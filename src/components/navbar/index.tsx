@@ -8,6 +8,7 @@ import {
     Link,
 } from "@nextui-org/react";
 import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
+import Image from "next/image";
 
 export const NavbarComponent: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -20,7 +21,7 @@ export const NavbarComponent: React.FC = () => {
     ];
 
     return (
-        <Navbar className="fixed z-10 bg-white p-3 w-full">
+        <Navbar className="fixed  bg-white p-3 w-full z-20">
             <NavbarContent>
                 <button
                     aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -30,7 +31,19 @@ export const NavbarComponent: React.FC = () => {
                     {isMenuOpen ? <CloseOutlined /> : <MenuOutlined />}
                 </button>
                 <NavbarBrand>
-                    <p className="font-bold text-inherit">ACME</p>
+                    <div className="flex items-center">
+                        <picture>
+                            <source srcSet="/logo/kpmj controls logo without text.png" media="(min-width: 50px)" />
+                            <img
+                                src="/logo/kpmj controls logo without text.png"
+                                alt="logo"
+                                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                            />
+                        </picture>
+                        <p className="font-bold ml-2 sm:ml-3 md:ml-5 text-gray-600 text-sm sm:text-base md:text-xl lg:text-2xl">
+                            KPMJ CONTROLS
+                        </p>
+                    </div>
                 </NavbarBrand>
             </NavbarContent>
 
