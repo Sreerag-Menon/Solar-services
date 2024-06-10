@@ -44,7 +44,7 @@ export const TestimonialComponent = () => {
                                         
                                         <div className="overflow-hidden rounded-full bg-slate-50">
                                             <Image
-                                                src='/revievers/94aceaeb-2ab9-4b48-a714-e0d537b4babc.jpeg'
+                                                src="/revievers/94aceaeb-2ab9-4b48-a714-e0d537b4babc.jpeg"
                                                 alt=""
                                                 width={20}
                                                 height={20}
