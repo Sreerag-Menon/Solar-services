@@ -90,7 +90,7 @@ export const TestimonialComponent = () => {
                                     </path>
                                 </svg>
                                     <blockquote className="relative">
-                                        <p className="text-lg tracking-tight text-slate-900">We highly recommend KPMJ Control's solar services to anyone seeking sustainable energy solutions. Their expertise, cutting-edge technology, and dedication to customer satisfaction is remarkable.
+                                        <p className="text-lg tracking-tight text-slate-900">We highly recommend KPMJ Control`s solar services to anyone seeking sustainable energy solutions. Their expertise, cutting-edge technology, and dedication to customer satisfaction is remarkable.
                                         </p>
                                     </blockquote>
                                     <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
