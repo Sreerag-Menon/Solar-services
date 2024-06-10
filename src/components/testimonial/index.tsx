@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 
 export const TestimonialComponent = () => {
@@ -36,24 +37,20 @@ export const TestimonialComponent = () => {
                                     </svg>
                                     <blockquote className="relative">
                                         <p className="text-lg tracking-tight text-slate-900">
-                                            I love the fitness apparel and gear I
-                                            purchased from this site. The
-                                            quality is exceptional and the
-                                            prices are unbeatable.
+                                        A highly reputed provider of CCTV services in state of Kerala. From the initial consultation to the installation and ongoing monitoring, their team was professional, knowledgeable, and attentive to our specific security needs.
                                         </p>
                                     </blockquote>
                                     <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                                        <div>
-                                            <div className="font-display text-base text-slate-900">
-                                                Sheryl Berge
-                                            </div>
-                                        </div>
+                                        
                                         <div className="overflow-hidden rounded-full bg-slate-50">
-                                            <img
+                                            <Image
+                                                src='/revievers/94aceaeb-2ab9-4b48-a714-e0d537b4babc.jpeg'
                                                 alt=""
+                                                width={20}
+                                                height={20}
                                                 className="h-14 w-14 object-cover"
                                                 style={{ color: "transparent" }}
-                                                src="https://randomuser.me/api/portraits/men/15.jpg"
+                                                
                                             />
                                         </div>
                                     </figcaption>
@@ -71,15 +68,12 @@ export const TestimonialComponent = () => {
                                     </path>
                                 </svg>
                                     <blockquote className="relative">
-                                        <p className="text-lg tracking-tight text-slate-900">As a professional athlete, I rely on high-performance
-                                            gear for my training. This site offers a great selection of top-notch products.</p>
+                                        <p className="text-lg tracking-tight text-slate-900">What truly sets KPMJ Control apart is their responsive customer service and ongoing support. Whenever we had questions or concerns, their knowledgeable team was readily available to assist us, providing timely and effective solutions.</p>
                                     </blockquote>
                                     <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                                        <div>
-                                            <div className="font-display text-base text-slate-900">Leland Kiehn</div>
-                                        </div>
+                                        
                                         <div className="overflow-hidden rounded-full bg-slate-50">
-                                            <img alt="" className="h-14 w-14 object-cover" style={{ color: "transparent" }} src="https://randomuser.me/api/portraits/women/15.jpg" />
+                                            <Image alt="" width={20} height={20} className="h-14 w-14 object-cover" style={{ color: "transparent" }} src="/revievers/faacf1e3-8033-44e5-a199-e3b602e09613.jpeg" />
                                         </div>
                                     </figcaption>
                                 </figure>
@@ -96,15 +90,13 @@ export const TestimonialComponent = () => {
                                     </path>
                                 </svg>
                                     <blockquote className="relative">
-                                        <p className="text-lg tracking-tight text-slate-900">The fitness apparel I bought here fits perfectly and
-                                            feels amazing. I highly recommend this store to anyone looking for quality gear.</p>
+                                        <p className="text-lg tracking-tight text-slate-900">We highly recommend KPMJ Control's solar services to anyone seeking sustainable energy solutions. Their expertise, cutting-edge technology, and dedication to customer satisfaction is remarkable.
+                                        </p>
                                     </blockquote>
                                     <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                                        <div>
-                                            <div className="font-display text-base text-slate-900">Peter Renolds</div>
-                                        </div>
-                                        <div className="overflow-hidden rounded-full bg-slate-50">
-                                            <img alt="" className="h-14 w-14 object-cover" style={{ color: "transparent" }} src="https://randomuser.me/api/portraits/men/10.jpg" />
+                                        
+                                        <div className="overflow-hidden rounded-full bg-slate-50 ">
+                                            <Image alt="" width={20} height={20} className="h-14 w-14 object-cover" style={{ color: "transparent" }} src="/revievers/DSC_0093 aa.jpg" />
                                         </div>
                                     </figcaption>
                                 </figure>

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import {
     Navbar,
     NavbarBrand,
@@ -12,6 +12,7 @@ import Image from "next/image";
 
 export const NavbarComponent: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const [isMobile,setIsMobile]=React.useState(false)
 
     const menuItems = [
         { name: "HOME", href: "Home" },
@@ -20,6 +21,20 @@ export const NavbarComponent: React.FC = () => {
         { name: "CONTACT US", href: "contact-us" },
     ];
 
+    useEffect(()=>{
+        const handleResize=()=>{
+            setIsMobile(window.innerWidth<=768);
+        }
+        handleResize()
+
+        window.addEventListener('resize',handleResize)
+
+        return(()=>{
+            window.removeEventListener('resize',handleResize)
+        })
+    },[])
+
+    
     return (
         <Navbar className="fixed  bg-white p-3 w-full z-20">
             <NavbarContent>
@@ -44,7 +59,7 @@ export const NavbarComponent: React.FC = () => {
                 {menuItems.map((item, index) => (
                     <NavbarItem key={index}>
                         <Link
-                            href={`${item.name==="CONTACT US"?`tel:+918921565767`:`#${item.href}`}`}
+                            href={`#${item.href}`}
                             className={`hover:text-custom-green ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green md:p-2 rounded-2xl" : ""}`}
                         >
                             {item.name}
@@ -58,7 +73,7 @@ export const NavbarComponent: React.FC = () => {
                     {menuItems.map((item, index) => (
                         <div key={index} className="py-2">
                             <Link
-                                href={`#${item.href}`}
+                                href={`${item.name==="CONTACT US"?`tel:+918921565767`:`#${item.href}`}` }
                                 className={`block text-lg ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green p-2 rounded-2xl" : "hover:text-custom-green"}`}
                                 onClick={() => setIsMenuOpen(false)} // Close the menu on item click
                             >
