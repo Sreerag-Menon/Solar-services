@@ -5,13 +5,13 @@ import Gallery from "../gallery-showcase";
 
 export const AboutUs: React.FC = () => {
     const images = [
-        "/Adani Group_idSyqcL_Ea_1.svg",
-        "/cp-plus.svg",
-        "/hikvision-logo.svg",
-        "/panasonic.svg",
-        "/havells-logo.svg",
-        "/164762.svg",
-        "/exide-1.svg"
+        "/brand-icons/Adani Group_idSyqcL_Ea_1.svg",
+        "/brand-icons/cp-plus.svg",
+        "/brand-icons/hikvision-logo.svg",
+        "/brand-icons/panasonic.svg",
+        "/brand-icons/havells-logo.svg",
+        "/brand-icons/aamaron.svg",
+        "/brand-icons/exide-1.svg"
     ].map((image) => ({
         id: crypto.randomUUID(),
         image
@@ -39,7 +39,7 @@ export const AboutUs: React.FC = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-4 gap-9  md:mt-9 mt-6 ">
                         <div className="flex flex-col items-center">
                             <Image
-                                src="/icons8-handshake-50.png"
+                                src="/icons/icons8-handshake-50.png"
                                 alt="handshake"
                                 width={40}
                                 height={40}
@@ -50,7 +50,7 @@ export const AboutUs: React.FC = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <Image
-                                src="/icons8-checked-50.png"
+                                src="/icons/icons8-checked-50.png"
                                 alt="trusted partnership"
                                 width={40}
                                 height={40}

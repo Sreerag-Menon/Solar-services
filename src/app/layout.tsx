@@ -9,7 +9,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" >
+      <link rel="icon" href="/logo/kpmj controls logo without text.png" sizes="any" />
+      <title>KPMJ CONTROLS</title>
       <body>
+
         <Home />
         <SpeedInsights />
       </body>

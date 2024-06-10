@@ -6,6 +6,7 @@ import thirdImage from '../../../public/images/a-realistic-image-of-a-futuristic
 import fourthImage from '../../../public/images/stephan-bechert-yFV39g6AZ5o-unsplash.jpg';
 import fifthImage from '../../../public/images/sacha-t-sas-mVPkezDvRy8-unsplash.jpg';
 import { inter, lato } from '@/utils/fonts';
+import { Link } from '@nextui-org/react';
 
 const carouselDetails = [{
     image: firstImage,
@@ -49,11 +50,11 @@ export const HomeCardSlider: React.FC = () => {
                         >
                             {details.text}
                         </p>
-                        <button
-                            className='hover:text-black hover:bg-gray-200 px-3 my-3 rounded-md hover:border-none bg-transparent border border-gray-100 w-28 md:w-32 h-10 text-white'
+                        <Link href='#services'
+                            className='hover:text-black hover:bg-gray-200 px-3 text-center my flex items-center justify-center rounded-md hover:border-none bg-transparent border border-gray-100 w-28 md:w-32 h-10 text-white'
                         >
                             Know More
-                        </button>
+                        </Link>
                     </div>
                 </div>
             ))}

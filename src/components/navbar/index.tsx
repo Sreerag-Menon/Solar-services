@@ -32,14 +32,7 @@ export const NavbarComponent: React.FC = () => {
                 </button>
                 <NavbarBrand>
                     <div className="flex items-center">
-                        <picture>
-                            <source srcSet="/logo/kpmj controls logo without text.png" media="(min-width: 50px)" />
-                            <img
-                                src="/logo/kpmj controls logo without text.png"
-                                alt="logo"
-                                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
-                            />
-                        </picture>
+                        <Image src='/logo/kpmj controls logo without text.png' alt="logo" width={30} height={30} className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14" />
                         <p className="font-bold ml-2 sm:ml-3 md:ml-5 text-gray-600 text-sm sm:text-base md:text-xl lg:text-2xl">
                             KPMJ CONTROLS
                         </p>
@@ -51,7 +44,7 @@ export const NavbarComponent: React.FC = () => {
                 {menuItems.map((item, index) => (
                     <NavbarItem key={index}>
                         <Link
-                            href={`#${item.href}`}
+                            href={`${item.name==="CONTACT US"?`tel:+918921565767`:`#${item.href}`}`}
                             className={`hover:text-custom-green ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green md:p-2 rounded-2xl" : ""}`}
                         >
                             {item.name}

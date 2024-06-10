@@ -18,7 +18,7 @@ export default function Home() {
       <div id="services" className="relative pt-10 bg-gray-200">
         <Services />
       </div>
-      <div id='contact-us' className="relative ">
+      <div className="relative ">
         <ContactUs />
       </div>
     </main>
