@@ -46,9 +46,11 @@ export const NavbarComponent: React.FC = () => {
                     {isMenuOpen ? <CloseOutlined /> : <MenuOutlined />}
                 </button>
                 <NavbarBrand>
-                    <div className="flex items-center md:ml-5 ml-2">
-                        <Image src='/logo/color logo with text.png' unoptimized alt="logo" width={50} height={50} quality={100} className="w-20 h-20 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-24 lg:h-24   " />
-                        
+                    <div className="flex items-center">
+                        <Image src='/logo/logo.png' alt="logo" width={50} height={50} unoptimized className="w-8 h-8 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-11 lg:h-10 ml-2  " />
+                        <p className="font-bold  ml-2 sm:ml-3 md:ml-5 text-sm sm:text-base md:text-xl lg:text-2xl">
+      KPMJ CONTROLS
+    </p>
                     </div>
                 </NavbarBrand>
             </NavbarContent>
@@ -67,7 +69,7 @@ export const NavbarComponent: React.FC = () => {
             </NavbarContent>
 
             {isMenuOpen && (
-                <div className="sm:hidden bg-white p-4 fixed top-0 left-0 w-full z-20 mt-16">
+                <div className="sm:hidden bg-white p-4 fixed top-0 left-0 w-full z-20 mt-12">
                     {menuItems.map((item, index) => (
                         <div key={index} className="py-2">
                             <Link
