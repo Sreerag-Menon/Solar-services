@@ -8,7 +8,7 @@ import { useState } from "react";
 
 export const Footer: React.FC = () => {
     const [copied, setCopied] = useState(false);
-    const phoneNumber = '+918921565767'; // Replace with the desired phone number
+    const phoneNumber = '+919061456531'; // Replace with the desired phone number
   
     const handleClick = async () => {
       try {
@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0 flex">
 
-                        <Image src="/logo/kpmj controls logo without text.png" width={40} height={40} className="mr-3" alt="FlowBite Logo" />
+                        <Image src="/logo/kpmj controls logo without text.png" width={40} height={40} className="mr-3" alt="Logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KPMJ CONTROLS</span>
 
                     </div>
