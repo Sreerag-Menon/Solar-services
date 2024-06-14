@@ -73,7 +73,7 @@ export const NavbarComponent: React.FC = () => {
                     {menuItems.map((item, index) => (
                         <div key={index} className="py-2">
                             <Link
-                                href={`${item.name==="CONTACT US"?`tel:+918921565767`:`#${item.href}`}` }
+                                href={`${item.name==="CONTACT US"?`tel:+919061456531`:`#${item.href}`}` }
                                 className={`block text-lg ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green p-2 rounded-2xl" : "hover:text-custom-green"}`}
                                 onClick={() => setIsMenuOpen(false)} // Close the menu on item click
                             >
