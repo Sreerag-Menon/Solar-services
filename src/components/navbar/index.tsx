@@ -47,20 +47,20 @@ export const NavbarComponent: React.FC = () => {
                 </button>
                 <NavbarBrand>
                     <div className="flex items-center">
-                        <Image src='/logo/logo.png' alt="logo" width={50} height={50} unoptimized className="w-8 h-8 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-11 lg:h-10 ml-2  " />
-                        <p className="font-bold  ml-2 sm:ml-3 md:ml-5 text-sm sm:text-base md:text-xl lg:text-2xl">
+                        <Image src='/logo/logo.png' alt="logo" width={50} height={50}  className="w-7 h-6 sm:w-8 sm:h-7 md:w-8 md:h-8 lg:w-11 lg:h-10 md:ml-2  " />
+                        <p className="font-bold  ml-2 sm:ml-3 md:ml-5  text-sm sm:text-sm    md:text-xl lg:text-2xl">
       KPMJ CONTROLS
     </p>
                     </div>
                 </NavbarBrand>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-16 md:py-4 sm:py-2 z-10" justify="end">
+            <NavbarContent className="hidden sm:flex sm:gap-8 md:gap-16 md:py-4 sm:py-2 z-10" justify="end">
                 {menuItems.map((item, index) => (
                     <NavbarItem key={index}>
                         <Link
                             href={`#${item.href}`}
-                            className={`hover:text-custom-green ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green md:p-2 rounded-2xl" : ""}`}
+                            className={`hover:text-custom-green ${item.name === "CONTACT US" ? "bg-custom-green text-white hover:bg-white hover:text-custom-green p-1  md:p-2 rounded-2xl" : ""}`}
                         >
                             {item.name}
                         </Link>
